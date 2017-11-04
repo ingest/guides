@@ -1,5 +1,5 @@
-# Developer Centre
-You can create an application in the [Developer Centre](https://developers.ingest.io) where you sign in with your Ingest account and set up your App. From there you can set up your redirect URI and retrieve and generate your tokens.
+# Developer Center
+You can create an application in the [Developer Center](https://developers.ingest.io) where you sign in with your Ingest account and set up your App. From there you can set up your redirect URI and retrieve and generate your tokens.
 
 # Authentication
 
