@@ -48,27 +48,27 @@ When a user arrives at the page, they are required to login if they don't alread
 
 The data returned to your service will be returned as query parameters on the request that is sent to the `redirect_uri`. The parameters that will be returned for a successful authorization attempt are below.
 
-Parameter | Description
---------- | -----------
-code      | This is a one-time code that is valid and after used is no longer valid for your client application
-state     | If we were given a state value, we will return the exact value present on your request
+| Parameter | Description                                                                                           |
+| --------- | ------------------------------------------------------------------------------------------------------|
+| `code`    | This is a one-time code that is valid and after used is no longer valid for your client application   |
+| `state`   | If we were given a state value, we will return the exact value present on your request.               |
 
 When a user rejects the authorization attempt, or some other error occurs, you will receive a response, in the same manner, however, the parameters are different.
 
-Parameter         | Description
------------------ | -----------
-error             | Refer to the [Error Types](#auth-error-types) table for more information
-error_description | A short description of potential reasons you may be receiving the error, intended to help during the development of a client application.
+| Parameter           | Description |
+| ------------------- | ----------- |
+| `error`             | Refer to the [Error Types](#auth-error-types) table for more information. |
+| `error_description` | A short description of potential reasons you may be receiving the error, intended to help during the development of a client application. |
 
-Error Types                |
--------------------------- | -----------
-invalid_request            | The request is missing a required parameter or is otherwise malformed
-unauthorized_client        | The authorizing client is not able to request a token via this method.
-access_denied              | The client rejected your request
-unsupported_response_type  | Ingest doesn't support retrieving a token using this method
-invalid_scope              | The requested scope is invalid, or malformed
-server_error               | We encountered an error trying to process your request
-temporarily_unavailable    | We aren't currently available, try again soon
+| Error Types                | |
+| -------------------------- | -----------
+| invalid_request            | The request is missing a required parameter or is otherwise malformed. |
+| unauthorized_client        | The authorizing client is not able to request a token via this method. |
+| access_denied              | The client rejected your request. |
+| unsupported_response_type  | Ingest doesn't support retrieving a token using this method. |
+| invalid_scope              | The requested scope is invalid, or malformed. |
+| server_error               | We encountered an error trying to process your request. |
+| temporarily_unavailable    | We aren't currently available, try again soon. |
 
 #### Retrieving a token
 
