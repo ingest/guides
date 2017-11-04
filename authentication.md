@@ -176,6 +176,8 @@ Parameter       | Description
 `grant_type`    | **(required)** Must be set to `client_credentials`
 `client_id`     | **(required)** Your unique identifier for your application
 `client_secret` | **(required)** Your secret client value to prove it's you
+`scope`         | **(required)** A comma-separated string of scopes
 `redirect_uri`  | **(optional)** Not necessary, but can be sent to verify the `redirect_uri` hasn't changed
+
 
 The major differences with the client credential flow are that you not operating in a users context, and you never receive a refresh token as you have access to the authorizing credentials.
